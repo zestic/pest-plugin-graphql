@@ -1,5 +1,5 @@
 {
-    "name": "miniaturebase/pest-plugin-graphql",
+    "name": "zestic/pest-plugin-graphql",
     "description": "Test your PHP GraphQL server in style, with Pest!",
     "keywords": [
         "php",
@@ -13,11 +13,11 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.3 || ^8.0",
-        "pestphp/pest": "^1.0",
-        "pestphp/pest-plugin": "^1.0",
+        "php": "^8.1",
+        "pestphp/pest": "^3.0",
+        "pestphp/pest-plugin": "^3.0",
         "psr/http-message": "^1.0",
-        "webonyx/graphql-php": ">=14"
+        "webonyx/graphql-php": ">=15"
     },
     "autoload": {
         "psr-4": {
@@ -30,11 +30,6 @@
     "require-dev": {
         "laminas/laminas-diactoros": "^2.6",
         "pestphp/pest-dev-tools": "dev-master"
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.x-dev"
-        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
