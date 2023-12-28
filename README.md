@@ -7,7 +7,7 @@ Test your GraphQL API in style, with Pest!
 Simply install through Composer!
 
 ```bash
-composer require --dev miniaturebase/pest-plugin-graphql
+composer require --dev zestic/pest-plugin-graphql
 ```
 
 ## What's Added?
