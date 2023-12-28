@@ -15,7 +15,7 @@
     "require": {
         "php": "^8.1",
         "pestphp/pest": "^3.0",
-        "pestphp/pest-plugin": "^3.0",
+        "pestphp/pest-plugin": "^2.0",
         "psr/http-message": "^1.0",
         "webonyx/graphql-php": ">=15"
     },
