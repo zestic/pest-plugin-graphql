@@ -17,7 +17,8 @@
         "pestphp/pest": "^2.0",
         "pestphp/pest-plugin": "^2.0.1",
         "psr/http-message": "^1.0",
-        "webonyx/graphql-php": ">=15"
+        "webonyx/graphql-php": ">=15",
+        "zestic/graphql-simple-client": "^0.1.0"
     },
     "autoload": {
         "psr-4": {
@@ -29,7 +30,7 @@
     },
     "require-dev": {
         "laminas/laminas-diactoros": "^2.6",
-        "pestphp/pest-dev-tools": "dev-master"
+        "pestphp/pest-dev-tools": "^2.16.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
