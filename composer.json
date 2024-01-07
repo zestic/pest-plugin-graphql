@@ -28,6 +28,11 @@
             "src/Autoload.php"
         ]
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
     "require-dev": {
         "laminas/laminas-diactoros": "^2.6",
         "pestphp/pest-dev-tools": "^2.16.0"
