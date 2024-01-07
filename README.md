@@ -173,7 +173,7 @@ it('contains response data')
 #### `toHaveErrors(array $errors)`
 
 Assert that the underlying response GraphQL errors are canonically equal to the
-exepected set of errors.
+expected set of errors.
 
 ```php
 it('has errors')

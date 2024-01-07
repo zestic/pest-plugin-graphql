@@ -26,6 +26,8 @@ use Psr\Http\Message\ResponseInterface;
  */
 trait GraphQl
 {
+    protected ResponseInterface $clientResponse;
+
     /**
      * Get an instance of a GraphQL schema.
      *
@@ -70,6 +72,11 @@ trait GraphQl
         }
 
         return $this;
+    }
+
+    public function sendGraphQL(string $query, array $variables = [], array $headers = [])
+    {
+        $this->clientResponse = Client::client()->raw($query, $variables, $headers);
     }
 
     /**

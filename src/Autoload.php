@@ -48,6 +48,11 @@ expect()->extend('isValidSdl', function () {
     return $this;
 });
 
+function sendGraphQL(string $query, array $variables = [], array $headers = [])
+{
+    return test()->sendGraphQL($query, $variables, $headers);
+}
+
 /**
  * @param string|Schema|null $document Schema file path or document instance
  *
