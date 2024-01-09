@@ -10,6 +10,27 @@ Simply install through Composer!
 composer require --dev zestic/pest-plugin-graphql
 ```
 
+In your `.env` file, set the testing url
+```bash
+TEST_GRAPHQL_URL=http://localhost
+```
+
+To organize your tests, create an `Api` directory in your `tests` directory. 
+
+Make sure your namespace is set up correctly in the `composer.json` file.
+```json
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+```
+
+Finally, in your Pest.php file add the following line:
+```php
+ uses(Pest\GraphQl\ApiTestCase::class)->in('Api');
+```
+
 ## What's Added?
 
 - Test your schema as code;
